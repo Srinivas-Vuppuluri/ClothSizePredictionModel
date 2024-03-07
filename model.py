@@ -11,12 +11,16 @@ from sklearn.metrics import accuracy_score
 import warnings
 warnings.filterwarnings('ignore')
 
-import os
-for dirname, _, filenames in os.walk('C:/Users/srini/OneDrive/Desktop/Diginique/p5exp/project.py'):
-    for filename in filenames:
-        print(os.path.join(dirname, filename))
+# import os
+# for dirname, _, filenames in os.walk('C:/Users/srini/OneDrive/Desktop/Diginique/p5exp/project.py'):
+#    for filename in filenames:
+#        print(os.path.join(dirname, filename))
 
-df = pd.read_csv('C:/Users/srini/OneDrive/Desktop/Diginique/p5exp/final_test.csv')
+url='https://github.com/Srinivas-Vuppuluri/ClothSizePredictionModel/blob/main/final_test.csv'
+
+# df = pd.read_csv('C:/Users/srini/OneDrive/Desktop/Diginique/p5exp/project.py')
+
+df = pd.read_csv(url)
 
 df.head()
 df.columns
